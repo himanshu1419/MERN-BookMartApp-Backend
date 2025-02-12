@@ -9,8 +9,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://bookmart-l3eiv590i-himanshu-negis-projects-06fc20b1.vercel.app",
-      "https://bookmart-7dhybh6qa-himanshu-negis-projects-06fc20b1.vercel.app",
+      process.env.FRONTEND_URL,
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
